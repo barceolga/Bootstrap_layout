@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Website based on layout using bootstrap</title>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" type="text/css" href="./css/style.css">
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+		<body>
+			<header class="jumbotron">
+				<nav class="navbar navbar-default">
+						<div class="navbar-brand">
+							<ul>
+								<li>
+									<i class="fas fa-paper-plane"></i>
+								</li>
+								<li>
+									<h2>Escape</h2>
+								</li>
+							</ul>
+						</div>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+								<i class="fas fa-bars"></i>
+						</button>
+						<div class="collapse navbar-collapse" id="myNavbar">
+								<ul class="nav navbar-nav">
+									<li class="nav-item">
+										<a href="#home">Home</a>
+									</li>
+									<li class="nav-item">
+										<a href="#services">Services</a>
+									</li>
+									<li class="nav-item">
+										<a href="#clients">Clients</a>
+									</li>
+									<li class="nav-item">
+										<a href="#team">Team</a>
+									</li>
+									<li class="nav-item">
+										<a href="#contact">Contact</a>
+									</li>
+								</ul>
+					</div>
+				</nav>
+				<div class="home" id="home">
+					<h2>Can you build the website of my dreams?</h2>
+					<h1>Yup, we can do that.</h1>
+					<button>Learn more</button>
+				</div>
+			</header>
+			<section class="services" id="services">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+							<h3 class="text-left">Web <span class="text-bold">development</span></h3>
+							<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas bibendum ante sed convallis convallis. Nullam rhoncus varius mi sit amet vehicula. </p>
+							<p class="text-left">Suspendisse et massa ligula. Etiam rutrum fringilla massa, sed tempor urna fermentum vitae. </p>
+						</div>
+						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+							<img src="images/first_icon.png" alt="first icon">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+							<img src="images/second_icon.png" alt="second icon">
+						</div>
+						<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+							<h3 class="text-left">Identity <span class="text-bold">branding</span></h3>
+							<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas bibendum ante sed convallis convallis. Nullam rhoncus varius mi sit amet vehicula. </p>
+							<p class="text-left">Suspendisse et massa ligula. Etiam rutrum fringilla massa, sed tempor urna fermentum vitae. </p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="skills">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-sm-12">
+							<div class="media">
+								<div class="media-left">
+									<div class="media-object"><i class="fas fa-male"></i></div>
+								</div>
+								<div class="media-body">
+									<div class="media-heading">
+										<h4>Branding & identity</h4>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et odio vitae nibh semper vulputate.  </p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="media">
+								<div class="media-left">
+									<div class="media-object"><i class="far fa-object-ungroup"></i></div>
+								</div>
+								<div class="media-body">
+									<div class="media-heading">
+										<h4>Web & graphic design</h4>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et odio vitae nibh semper vulputate</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="media">
+								<div class="media-left">
+									<div class="media-object"><i class="fas fa-mobile-alt"></i></div>
+								</div>
+								<div class="media-body">
+									<div class="media-heading">
+										<h4>Mobile app development</h4>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et odio vitae nibh semper vulputate</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="media">
+								<div class="media-left">
+									<div class="media-object"><i class="fas fa-video"></i></div>
+								</div>
+								<div class="media-body">
+									<div class="media-heading">
+										<h4>Animations</h4>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et odio vitae nibh semper vulputate/p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="media">
+								<div class="media-left">
+									<div class="media-object"><i class="fas fa-star"></i></div>
+								</div>
+								<div class="media-body">
+									<div class="media-heading">
+										<h4>UI/UX</h4>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et odio vitae nibh semper vulputate</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="media">
+								<div class="media-left">
+									<div class="media-object"><i class="fas fa-camera"></i></div>
+								</div>
+								<div class="media-body">
+									<div class="media-heading">
+										<h4>Photography</h4>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et odio vitae nibh semper vulputate</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="clients" id="clients">
+				<div class="container">
+					<div class="row">
+						<div class="clients_title">
+							<h3>Awesome <span class="text-bold">clients</span></h3>
+							<p> See what nice things our clients said about us.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="clients_image-left">
+							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+								<div class="image-circle"></div>
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+								<h4>"Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos." </h4>
+								<h5> - Jamie Richardson, Founder of Cococa Media</h5>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="clients_image-right">
+							<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+								<h4>"Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos." </h4>
+								<h5> - Bart Thompson, Founder of Rainel</h5>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+								<div class="image-circle"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="clients_logo">
+							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+								<img src="images/Logo_Envato.png" alt="Logo Envato">
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+								<img src="images/Logo_WordPress.png" alt="Logo WordPress">
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+								<img src="images/Logo_AeTuts.png" alt="Logo AeTuts" class="image_logo-third">
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+								<img src="images/Logo_Microlancer.png" alt="Logo Microlancer">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="team">
+				<div class="container">
+					<div class="row">
+						<div class="team_title">
+							<h3>Amazing <span class="text-bold">team</span></h3>
+							<p>These wonderful people make work enjoyable</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<div class="team_image">
+							</div>
+							<div class="team_description">
+								<p class="text-bold">Kimberly Thompson<p>
+								<p>Marketer</p>
+							</div>
+							<div class="team_icons">
+								<div class="team_icons-circle">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</div>
+								<div class="team_icons-circle">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</div>
+								<div class="team_icons-circle">
+									<i class="fa fa-pinterest" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<div class="team_image">
+							</div>
+							<div class="team_description">
+								<p class="text-bold">Rico Massimo<p>
+								<p>Coder</p>
+							</div>
+							<div class="team_icons">
+								<div class="team_icons-circle">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</div>
+								<div class="team_icons-circle">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</div>
+								<div class="team_icons-circle">
+									<i class="fa fa-google-plus"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<div class="team_image">
+							</div>
+							<div class="team_description">
+								<p class="text-bold">Uku Mason<p>
+								<p>Graphic Designer</p>
+							</div>
+							<div class="team_icons">
+								<div class="team_icons-circle">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</div>
+								<div class="team_icons-circle">
+									<i class="fa fa-pinterest" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="team_paragraph">
+							<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="footer" id="contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="footer_contact">
+								<div class="row">
+									<div class="footer_contact-title">
+										<h3>Say <span class="text-bold">Hello</span></h3>
+										<p> Don't be shy, drop us an email and say hello! We are a really nice bunch of people:)</p>
+									</div>
+								</div>
+								<div class="footer_contact-info">
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+											<div class="media">
+												<div class="media-left">
+													<div class="media-object">
+														<i class="fas fa-mobile-alt"></i>
+													</div>
+												</div>
+												<div class="media-body">
+													<p>(416) 555-000</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="media">
+												<div class="media-left">
+													<div class="media-object">
+														<i class="far fa-envelope"></i>
+													</div>
+												</div>
+												<div class="media-body">
+													<p>hello@escape.com</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="media">
+												<div class="media-left">
+													<div class="media-object">
+														<i class="fa fa-twitter"></i>
+													</div>
+												</div>
+												<div class="media-body">
+													<p>@escape</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="media">
+												<div class="media-left">
+													<div class="media-object">
+														<i class="fa fa-facebook"></i>
+													</div>
+												</div>
+												<div class="media-body">
+													<p>facebook.com/escape</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="media">
+												<div class="media-left">
+													<div class="media-object">
+														<i class="fa fa-google-plus"></i>
+													</div>
+												</div>
+												<div class="media-body">
+													<p>plus.com/escape</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="media">
+												<div class="media-left">
+													<div class="media-object">
+														<i class="fa fa-pinterest"></i>
+													</div>
+												</div>
+												<div class="media-body">
+													<p>pinterest.com/escape</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" id="ExampleName" placeholder="Your Name *">
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="ExampleEmail" placeholder="Your Email *">
+								</div>
+								<div class="form-group">
+									<textarea class="form-control" id="ExampleMessage" placeholder="Your Message *" rows="8"></textarea>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="row">
+						<div class="footer_copyrights">
+							<div class="footer_copyrights-rectangle"></div>
+							<p>&amp;copy 2014 Escape by FreebiesXpress <span>· Made in Toronto</span></p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</body>
+	</html>

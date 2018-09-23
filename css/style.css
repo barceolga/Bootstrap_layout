@@ -62,7 +62,6 @@ body .text-bold {
   list-style-type: none;
   display: -ms-flexbox;
   display: flex;
-  border: 1px red solid;
   padding-left: 0;
 }
 
@@ -77,7 +76,7 @@ body .text-bold {
 
 .jumbotron .navbar-default .navbar-brand .fas, .jumbotron .navbar-default .navbar-brand .skills .media .far, .skills .media .jumbotron .navbar-default .navbar-brand .far {
   line-height: 25px;
-  font-size: 45px;
+  font-size: 25px;
   color: #fff;
   padding-right: 10px;
 }

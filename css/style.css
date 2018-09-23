@@ -56,6 +56,11 @@ body .text-bold {
 .jumbotron .navbar-default {
   background-color: transparent;
   border: none;
+  width: 100%;
+}
+
+.jumbotron .navbar-default .row {
+  width: 100%;
 }
 
 .jumbotron .navbar-default .navbar-brand ul {
@@ -89,12 +94,20 @@ body .text-bold {
   color: #fff;
 }
 
+.jumbotron .navbar-default .navbar-collapse {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
 .jumbotron .navbar-default .navbar-collapse .navbar-nav {
   float: right;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
       justify-content: flex-end;
+  margin-left: 7.5%;
 }
 
 .jumbotron .navbar-default .navbar-collapse .navbar-nav li a {
@@ -103,6 +116,7 @@ body .text-bold {
   text-align: center;
   font-family: "Lato", sans-serif;
   transition: 1s linear;
+  padding: 0 10px;
 }
 
 .jumbotron .navbar-default .navbar-collapse .navbar-nav li a:hover {
@@ -588,11 +602,11 @@ body .text-bold {
     margin-bottom: 30px;
     margin-top: 20px;
   }
-  .navbar-toggle {
+  .navbar-toggler {
     background-color: transparent;
     cursor: pointer;
   }
-  .navbar-toggle .fas, .navbar-toggle .skills .media .far, .skills .media .navbar-toggle .far {
+  .navbar-toggler .fas, .navbar-toggler .skills .media .far, .skills .media .navbar-toggler .far {
     background-color: transparent;
     color: #fff;
   }
@@ -1110,6 +1124,9 @@ body .text-bold {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .jumbotron .navbar-default .navbar-collapse .navbar-nav {
+    margin-left: 10%;
+  }
   .skills .media p {
     padding: 0 40px 0 20px;
   }

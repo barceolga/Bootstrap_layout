@@ -11,12 +11,15 @@ $project-font: "Lato", sans-serif;
 $light-project-grey: rgba(119, 119, 119, 255);
 $dark-project-grey: #222222;
 
-/*$phone: "(max-width: 767px)";
+$phone_portrait: "(max-width: 767px) and(orientation: portrait)";
+$phone_landscape: "(max-width: 767px) and(orientation: landscape)";
 $tablet: "(min-width: 768px) and (max-width: 991px)";
-$desktop: "(min-width: 992px)";*/
+$desktop: "(min-width: 992px) and (max-width: 1199px)";
+$desktop_large: "(min-width: 1200px)";
 
 body  {
 	margin: 0;
+	overflow: auto;
 
 	h3 {
 		font-family: $project-font;
@@ -114,33 +117,34 @@ font-style: normal
 			}
 
 		}
-
-		 .navbar-nav {
-				float: right;
-				display: flex;
-				justify-content: flex-end;
-				//border: 2px green solid;
-				li {
-					a {
-					color: #fff;
-					font-size: 18px;
-					text-align: center;
-					font-family: $project-font;
-					transition: 1s linear;
-					&:hover {
-						background-color: #ff944d;
-						color: #26004d;
-						text-decoration: none;
-					}
-					&:active {
-						background-color: #ff944d;
-						color: #26004d;
-						text-decoration: none;
-					}
-					}
-
-				}
+ 		.navbar-collapse {
+			.navbar-nav {
+ 				float: right;
+ 				display: flex;
+ 				justify-content: flex-end;
+ 				//border: 2px green solid;
+ 				li {
+ 					a {
+	 					color: #fff;
+	 					font-size: 18px;
+	 					text-align: center;
+	 					font-family: $project-font;
+	 					transition: 1s linear;
+ 					&:hover {
+ 						background-color: #ff944d;
+ 						color: #26004d;
+ 						text-decoration: none;
+ 					}
+ 					&:active {
+ 						background-color: #ff944d;
+ 						color: #26004d;
+ 						text-decoration: none;
+ 					}
+ 					}
+ 				}
+ 			}
 		}
+
 	}
 
 	.home {
@@ -184,6 +188,7 @@ font-style: normal
 .services {
 	width: 100%;
 	height: auto;
+	overflow: hidden;
 }
 
 .services {
@@ -203,6 +208,10 @@ font-style: normal
 
 	h3 {
 		color: $dark-project-grey;
+		text-align: left;
+	}
+	p {
+		text-align: left;
 	}
 }
 
@@ -212,7 +221,8 @@ font-style: normal
 }
 
 .skills {
-
+	width: 100%;
+	overflow: hidden;
 	.row {
 		@include clearfix;
 	}
@@ -242,12 +252,12 @@ font-style: normal
 		h4 {
 			color: $dark-project-grey;
 			text-align: left;
-			padding-left: 10px;
+			padding-left: 20px;
 			margin-top: 0;
 		}
 
 		p {
-			padding-left: 10px;
+			padding: 0 90px 0 20px;
 		}
 	}
 }
@@ -256,6 +266,7 @@ font-style: normal
 	width: 100%;
 	height: 810px;
 	margin-top: 100px;
+	overflow: hidden;
 }
 
 .clients {
@@ -380,6 +391,7 @@ font-style: normal
 .team {
 	width: 100%;
 	height: 800px;
+	overflow: hidden;
 	background-color: $dark-project-grey;
 	color: #fff;
 }
@@ -496,11 +508,12 @@ font-style: normal
 	height: 680px;
 	background-color: #7690c5;
 	padding-top: 100px;
+	overflow: hidden;
 }
 
 .footer {
 	.container {
-		width: 1000px;
+		width: 940px;
 		margin: 0 auto;
 	}
 
@@ -580,7 +593,7 @@ font-style: normal
    }
 }
 
-@media (max-width: 767px) {
+@media #{$phone_portrait}  {
 .jumbotron {
 	background-image: url('../images/Sunsetbridge_small.png');
 	size: cover;
@@ -630,7 +643,17 @@ font-style: normal
 			width: auto;
 			h3 {
 				font-size: 55px;
+				text-align: center;
 			}
+			p {
+				text-align: center;
+			}
+			.col-xs-12 {
+				 display:flex;
+				 flex-direction: column;
+				 align-items: center;
+				 justify-content: center;
+			 }
 		}
 
 		.row {
@@ -646,6 +669,11 @@ font-style: normal
 	}
 	.skills {
 		margin-bottom: 0;
+		.media {
+			p {
+				padding: 0 10px 0 20px;
+			}
+		}
 	}
 
 	.clients {
@@ -668,12 +696,9 @@ font-style: normal
 
 		.clients_image-left {
 			width: auto;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+			display: block;
 
-			.col-sm-12 {
+			.col-xs-12 {
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -682,12 +707,9 @@ font-style: normal
 
 		.clients_image-right {
 			width: auto;
-			display: flex;
-			flex-direction: column-reverse;
-			justify-content: center;
-			align-items: center;
+			display: block;
 
-			.col-sm-12 {
+			.col-xs-12 {
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -704,8 +726,8 @@ font-style: normal
 			width: auto;
 			height: auto;
 			margin: 0 auto;
-			flex-direction: column;
-			.col-sm-12 {
+			display: block;
+			.col-xs-12 {
 				margin-bottom: 25px;
 			}
 		}
@@ -743,7 +765,7 @@ font-style: normal
 			justify-content: center;
 		}
 
-		.col-sm-12 {
+		.col-xs-12 {
 			display: flex;
 			flex-direction: column;
 			-webkit-flex-direcition: column;
@@ -789,8 +811,8 @@ font-style: normal
 				font-size: 20px;
 				color: rgba(235, 235, 235, 255);
 				text-align: center;
-				margin-top: 50px;
-				margin-bottom: 50px;
+				margin: 50px auto;
+				padding: 0 10px;
 			}
 		}
 	}
@@ -805,10 +827,24 @@ font-style: normal
 			max-width: 100%;
 			width: auto;
 		}
-
+			.footer_contact-title {
+				padding: 0;
+				h3 {
+					text-align: center;
+				}
+				p {
+					text-align: center;
+				}
+			}
 	   	.row {
 	   		margin: 0 auto 25px auto;
+				.media {
+					width: 100%;
+				}
 	   	}
+			.row:last-of-type {
+				margin: 0 auto;
+			}
 			.media-left {
 				margin-right: 10px;
 				display: block;
@@ -821,6 +857,7 @@ font-style: normal
 	   		align-items: center;
 	   		justify-content: center;
 	   		margin-top: 45px;
+				width: 100%;
 	   }
 
 	   .footer_copyrights-rectangle {
@@ -840,4 +877,341 @@ font-style: normal
 	   		}
 	   }
 	}
+}
+
+@media #{$phone_landscape} {
+	.jumbotron {
+		background-image: url('../images/Sunsetbridge_small.png');
+		size: cover;
+		repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: 0% 100%;
+		overflow: hidden;
+		resize: both;
+		color: #fff;
+		height: 801px;
+	}
+	.jumbotron {
+		.home {
+			h2 {
+				margin-top: 70px;
+			}
+			h1 {
+				margin-bottom: 30px;
+				margin-top: 20px
+			}
+		}
+	}
+		.navbar-toggle  {
+			background-color: transparent;
+			cursor: pointer;
+			.fas {
+			 background-color: transparent;
+			 color: #fff;
+			}
+		}
+
+
+		.services {
+			width: 100%;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 100px;
+		}
+
+		.services {
+			.container {
+				max-width: 100%;
+				width: auto;
+				h3 {
+					font-size: 55px;
+					text-align: center;
+				}
+				p {
+					text-align: center;
+				}
+				.col-sm-12 {
+				  display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+
+			.row {
+				display: flex;
+				flex-direction: column;
+				height: auto;
+			}
+
+			.row:first-of-type {
+				display: flex;
+				flex-direction: column-reverse;
+			}
+		}
+		.skills {
+			margin-bottom: 0;
+		}
+		.skills {
+			.media {
+				p {
+					padding: 0 20px 0 20px;
+				}
+			}
+		}
+
+		.clients {
+				width: 100%;
+				height: auto;
+				display: flex;
+				flex-direction: column;
+				margin-top: 50px;
+
+			.container {
+				max-width: 100%;
+				width: auto;
+				margin: auto;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.clients_title {
+				width: auto;
+				margin-bottom: 50px;
+			}
+
+			.clients_image-left {
+				width: 100%;
+				display: block;
+
+				.col-xs-12 {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+
+			.clients_image-right {
+				width: 100%;
+				display: block;
+
+
+				.col-xs-12 {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding-left: 0;
+				}
+			}
+
+			h4 {
+				width: 100%;
+				padding: 25px 0;
+			}
+
+			.clients_logo {
+				width: auto;
+				height: auto;
+				margin: 0 auto;
+				display: block;
+				.col-xs-12 {
+					margin-bottom: 25px;
+				}
+			}
+
+			.row:last-of-type {
+				margin-bottom: 50px;
+			}
+		}
+
+		.team {
+			width: 100%;
+			height: auto;
+			background-color: $dark-project-grey;
+			color: #fff;
+		}
+
+		.team {
+
+			.container {
+				max-width: 100%;
+				width: auto;
+				margin: 0 auto;
+			}
+
+			.team_title {
+				margin-top: 50px;
+			}
+
+
+			.row {
+				display: flex;
+				flex-direction: column;
+				-webkit-flex-direcition: column;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.col-xs-12 {
+				display: flex;
+				flex-direction: column;
+				-webkit-flex-direcition: column;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 50px;
+			}
+
+
+			.team_icons {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 141px;
+			}
+
+			.team_icons-circle {
+				height: 40px;
+				width: 40px;
+				border: 3px solid #fff;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-right: 7px;
+			}
+
+			.team_icons {
+				.fa {
+					color: #fff;
+					font-size: 20px;
+					text-align: center;
+				}
+			}
+
+			.team_paragraph {
+				width: auto;
+				margin: 0 auto;
+			}
+
+			.team_paragraph {
+				p {
+					font-size: 20px;
+					color: rgba(235, 235, 235, 255);
+					text-align: center;
+					margin-top: 50px;
+					margin-bottom: 50px;
+				}
+			}
+		}
+
+			.footer {
+				height: auto;
+				padding-top: 50px;
+		}
+
+		.footer {
+			.container {
+				max-width: 100%;
+				width: auto;
+			}
+
+			.footer_contact-title {
+				padding: 0;
+				h3 {
+					text-align: center;
+				}
+				p {
+					text-align: center;
+				}
+			}
+		   	.row {
+		   		margin: 0 auto 25px auto;
+					.media {
+					 margin-left: 33%;
+					}
+		   	}
+				.row:last-of-type {
+					margin: 0 auto;
+				}
+
+				.media-left {
+					margin: 0 10px 0 0;
+					display: block;
+					width: 40px;
+				}
+		   .footer_copyrights {
+		   		display: flex;
+		   		-webkit-flex-direction: column;
+		   		flex-direction: column;
+		   		align-items: center;
+		   		justify-content: center;
+		   		margin-top: 45px;
+					width: 100%;
+		   }
+
+		   .footer_copyrights-rectangle {
+		   		height: 1px;
+		   		width: 80%;
+		   		margin: 0 auto;
+		   }
+
+		   .footer_copyrights {
+		   		p {
+		   		margin-top: 31px;
+					padding: 11px;
+					text-align: center;
+					span {
+						margin-top: 5px;
+					}
+		   		}
+		   }
+		}
+}
+
+@media #{$tablet} {
+	.skills {
+		.media {
+			p {
+				padding: 0 40px 0 20px;
+			}
+		}
+	}
+	.clients {
+		width: 100%;
+		.container {
+			width: 100%;
+		}
+
+		.clients_image-left {
+			width: 100%;
+		}
+		.clients_image-right {
+			width: 100%;
+		}
+		h4 {
+			width: auto;
+		}
+		.clients_logo {
+			width: 100%;
+		}
+		.col-md-3 {
+			img {
+				width: 100%
+			}
+		}
+	}
+	.footer {
+		height: auto;
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
 }

@@ -592,6 +592,9 @@ body .text-bold {
     color: #fff;
     height: 801px;
   }
+  .jumbotron .navbar-default .navbar-brand {
+    margin-left: 0;
+  }
   .jumbotron .home h2 {
     margin-top: 70px;
   }
@@ -864,6 +867,9 @@ body .text-bold {
     color: #fff;
     height: 801px;
   }
+  .jumbotron .navbar-default .navbar-brand {
+    margin-left: 0;
+  }
   .jumbotron .home h2 {
     margin-top: 70px;
   }
@@ -1129,6 +1135,9 @@ body .text-bold {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .jumbotron .navbar-default .navbar-brand {
+    margin-left: 0;
+  }
   .jumbotron .navbar-default .navbar-collapse .navbar-nav {
     margin-left: 10%;
   }

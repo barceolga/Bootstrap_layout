@@ -613,6 +613,11 @@ font-style: normal
 	height: 801px;
 }
 .jumbotron {
+	.navbar-default {
+	.navbar-brand {
+		margin-left: 0;
+	}
+}
 	.home {
 		h2 {
 			margin-top: 70px;
@@ -904,6 +909,11 @@ font-style: normal
 		height: 801px;
 	}
 	.jumbotron {
+		.navbar-default {
+			.navbar-brand {
+				margin-left: 0;
+			}
+		}
 		.home {
 			h2 {
 				margin-top: 70px;
@@ -1188,6 +1198,9 @@ font-style: normal
 
 	.jumbotron {
 		.navbar-default {
+			.navbar-brand {
+				margin-left: 0;
+			}
 			.navbar-collapse {
 				.navbar-nav {
 					margin-left: 10%;

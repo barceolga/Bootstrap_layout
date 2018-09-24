@@ -557,6 +557,15 @@ body .text-bold {
   height: 55px;
 }
 
+.footer .footer_contact-info .row .media {
+  width: 200px;
+}
+
+.footer .footer_contact-info .row .media .media-left {
+  margin-right: 10px;
+  width: 40px;
+}
+
 .footer .footer_copyrights {
   display: -ms-flexbox;
   display: flex;

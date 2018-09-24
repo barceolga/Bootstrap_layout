@@ -570,6 +570,13 @@ font-style: normal
    .footer_contact-info {
    	 	.row {
    	 		height: 55px;
+				.media {
+					width: 200px;
+					.media-left {
+						margin-right: 10px;
+						width: 40px;
+					}
+				}
    	 	}
 
    }

@@ -42,7 +42,7 @@ body .text-bold {
 }
 
 .jumbotron {
-  background-image: url("../images/Sunsetbridge_small.png");
+  background-image: url("../images/Nightbridge.png");
   size: cover;
   repeat: no-repeat;
   background-size: cover;
@@ -61,6 +61,10 @@ body .text-bold {
 
 .jumbotron .navbar-default .row {
   width: 100%;
+}
+
+.jumbotron .navbar-default .navbar-brand {
+  margin-left: 160px;
 }
 
 .jumbotron .navbar-default .navbar-brand ul {
@@ -92,13 +96,6 @@ body .text-bold {
   font-family: 'Cubano', sans-serif;
   font-weight: bold;
   color: #fff;
-}
-
-.jumbotron .navbar-default .navbar-collapse {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
 }
 
 .jumbotron .navbar-default .navbar-collapse .navbar-nav {
@@ -148,7 +145,7 @@ body .text-bold {
 .jumbotron .home h2 {
   font-weight: 400;
   font-size: 32px;
-  margin-top: 200px;
+  margin-top: 170px;
 }
 
 .jumbotron .home h1 {
@@ -585,11 +582,11 @@ body .text-bold {
 
 @media (max-width: 767px) and (orientation: portrait) {
   .jumbotron {
-    background-image: url("../images/Sunsetbridge_small.png");
+    background-image: url("../images/Nightbridge.png");
     size: cover;
     repeat: no-repeat;
     background-size: cover;
-    background-position: 0% 100%;
+    background-position: 50% 100%;
     overflow: hidden;
     resize: both;
     color: #fff;
@@ -602,11 +599,15 @@ body .text-bold {
     margin-bottom: 30px;
     margin-top: 20px;
   }
-  .navbar-toggler {
+  .jumbotron .col-xs-6 {
+    width: 50%;
+  }
+  .jumbotron .navbar-toggler {
+    margin-left: 60%;
     background-color: transparent;
     cursor: pointer;
   }
-  .navbar-toggler .fas, .navbar-toggler .skills .media .far, .skills .media .navbar-toggler .far {
+  .jumbotron .navbar-toggler .fas, .jumbotron .navbar-toggler .skills .media .far, .skills .media .jumbotron .navbar-toggler .far {
     background-color: transparent;
     color: #fff;
   }
@@ -853,11 +854,11 @@ body .text-bold {
 
 @media (max-width: 767px) and (orientation: landscape) {
   .jumbotron {
-    background-image: url("../images/Sunsetbridge_small.png");
+    background-image: url("../images/Nightbridge.png");
     size: cover;
     repeat: no-repeat;
     background-size: cover;
-    background-position: 0% 100%;
+    background-position: 50% 100%;
     overflow: hidden;
     resize: both;
     color: #fff;
@@ -870,13 +871,17 @@ body .text-bold {
     margin-bottom: 30px;
     margin-top: 20px;
   }
-  .navbar-toggle {
+  .jumbotron .col-sm-6 {
+    width: 50%;
+  }
+  .jumbotron .navbar-toggler {
+    margin-left: 80%;
     background-color: transparent;
     cursor: pointer;
-  }
-  .navbar-toggle .fas, .navbar-toggle .skills .media .far, .skills .media .navbar-toggle .far {
-    background-color: transparent;
     color: #fff;
+  }
+  .jumbotron .navbar-toggler .navbar-toggler-icon {
+    background-color: transparent;
   }
   .services {
     width: 100%;
@@ -1126,6 +1131,9 @@ body .text-bold {
 @media (min-width: 768px) and (max-width: 991px) {
   .jumbotron .navbar-default .navbar-collapse .navbar-nav {
     margin-left: 10%;
+  }
+  .jumbotron .home h2 {
+    margin-top: 50px;
   }
   .skills .media p {
     padding: 0 40px 0 20px;

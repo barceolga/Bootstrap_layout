@@ -64,7 +64,7 @@ font-style: normal
 }
 
 .jumbotron {
-	background-image: url('../images/Sunsetbridge_small.png');
+	background-image: url('../images/Nightbridge.png');
 	size: cover;
 	repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -89,6 +89,7 @@ font-style: normal
 			width: 100%;
 		}
 		.navbar-brand {
+			margin-left: 160px;
 			ul {
 				list-style-type: none;
 				display: flex;
@@ -120,8 +121,6 @@ font-style: normal
 		}
 
  		.navbar-collapse {
-			display: flex;
-			justify-content: flex-end;
 			.navbar-nav {
  				float: right;
  				display: flex;
@@ -166,7 +165,7 @@ font-style: normal
 		h2 {
 			font-weight: 400;
 			font-size: 32px;
-			margin-top: 200px;
+			margin-top: 170px;
 		}
 
 		h1 {
@@ -600,14 +599,14 @@ font-style: normal
 
 @media #{$phone_portrait}  {
 .jumbotron {
-	background-image: url('../images/Sunsetbridge_small.png');
+	background-image: url('../images/Nightbridge.png');
 	size: cover;
 	repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-position: 0% 100%;
+	background-position: 50% 100%;
 	overflow: hidden;
 	resize: both;
 	color: #fff;
@@ -623,8 +622,11 @@ font-style: normal
 			margin-top: 20px
 		}
 	}
-}
+	.col-xs-6 {
+		width: 50%;
+	}
 	.navbar-toggler  {
+		margin-left: 60%;
 		background-color: transparent;
 		cursor: pointer;
 		.fas {
@@ -632,6 +634,8 @@ font-style: normal
 		 color: #fff;
 		}
 	}
+}
+
 
 
 	.services {
@@ -876,9 +880,9 @@ font-style: normal
 	   		margin-top: 31px;
 				padding: 11px;
 				text-align: center;
-				span {
-					margin-top: 5px;
-				}
+					span {
+						margin-top: 5px;
+					}
 	   		}
 	   }
 	}
@@ -886,14 +890,14 @@ font-style: normal
 
 @media #{$phone_landscape} {
 	.jumbotron {
-		background-image: url('../images/Sunsetbridge_small.png');
+		background-image: url('../images/Nightbridge.png');
 		size: cover;
 		repeat: no-repeat;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-		background-position: 0% 100%;
+		background-position: 50% 100%;
 		overflow: hidden;
 		resize: both;
 		color: #fff;
@@ -909,16 +913,19 @@ font-style: normal
 				margin-top: 20px
 			}
 		}
-	}
-		.navbar-toggle  {
+		.col-sm-6 {
+			width: 50%;
+		}
+		.navbar-toggler  {
+			margin-left: 80%;
 			background-color: transparent;
 			cursor: pointer;
-			.fas {
+			color: #fff;
+			.navbar-toggler-icon {
 			 background-color: transparent;
-			 color: #fff;
 			}
 		}
-
+	}
 
 		.services {
 			width: 100%;
@@ -1185,6 +1192,11 @@ font-style: normal
 				.navbar-nav {
 					margin-left: 10%;
 				}
+			}
+		}
+		.home {
+			h2 {
+				margin-top: 50px;
 			}
 		}
 	}

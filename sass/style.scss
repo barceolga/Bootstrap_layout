@@ -573,8 +573,14 @@ font-style: normal
 				.media {
 					width: 200px;
 					.media-left {
-						margin-right: 10px;
-						width: 40px;
+						.media-object {
+							width: 40px;
+						}
+					}
+					.media-body {
+						p {
+							text-align: left;
+						}
 					}
 				}
    	 	}

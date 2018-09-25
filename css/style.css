@@ -561,9 +561,12 @@ body .text-bold {
   width: 200px;
 }
 
-.footer .footer_contact-info .row .media .media-left {
-  margin-right: 10px;
+.footer .footer_contact-info .row .media .media-left .media-object {
   width: 40px;
+}
+
+.footer .footer_contact-info .row .media .media-body p {
+  text-align: left;
 }
 
 .footer .footer_copyrights {
